@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0cd5ed260.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/stilos.css">
+
+    <title>XV Sofia Ramírez</title>
+</head>
+<body data-spy="scroll" data-target="#nav" style="font-family: 'Roboto Slab', serif; background-color: whitesmoke;">
+    <!-- Barra menu-->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top" style="background:
+    linear-gradient(45deg, rgba(240, 240, 240, 0.2) 10%, transparent 10%),
+    linear-gradient(65deg, transparent 70%, rgba(240, 240, 240, 0.2) 70%),
+    linear-gradient(15deg, rgba(240, 240, 240, 0.2) 80%, transparent 80%),
+    linear-gradient(25deg, rgba(240, 240, 240, 0.2) 30%, transparent 30%),
+    linear-gradient(-35deg, rgba(240, 240, 240, 0.2) 50%, transparent 50%),
+    rgba(240, 240, 240, 0.2);">
+        <div class="container-sm">
+            <a id="xv" class="navbar-brand fs-3" data-aos="slide-right" style="font-family: 'Dancing Script', cursive;">XV Sofía Ramírez</a>
+            <button class="navbar-toggler" type="button" data-aos="slide-left" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: transparent;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" data-aos="slide-left" id="navbarNav">
+                <ul class="navbar-nav nav-pills ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#LugarFecha">Lugar & Fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Asistencia">Asistencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#MesaRegalos">Mesa de regalos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Galeria">Galeria</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Contenedor inicio-->
+    <div id="Inicio" class="d-flex align-items-center" style="height: 100vh;">
+        <div class="parallax" data-parallax-image="static/img/fondo.jpg"></div>
+        <div class="text-center mx-auto text-white" data-aos="fade-up" style="max-width: 100%; min-width: 50%;">
+            <p style="font-family: 'Dancing Script', cursive; font-size: 5rem;">Mis<br>XV</p>
+            <p class="separator">ACOMPAÑANOS A CELEBRAR LOS</p>
+            <p style="font-family: 'Dancing Script', cursive; font-size: 3rem;">XV de Sofía Ramírez</p>
+            <p>22.07.2021</p>
+            
+            <button style="font-size: 2.5rem; border-radius: 50%; height: 5rem; width: 5rem; border: none;
+            background:
+            linear-gradient(45deg, rgba(240, 240, 240, 0.5) 10%, transparent 10%),
+            linear-gradient(65deg, transparent 70%, rgba(240, 240, 240, 0.5) 70%),
+            linear-gradient(15deg, rgba(240, 240, 240, 0.5) 80%, transparent 80%),
+            linear-gradient(25deg, rgba(240, 240, 240, 0.5) 30%, transparent 30%),
+            linear-gradient(-35deg, rgba(240, 240, 240, 0.5) 50%, transparent 50%),
+            rgba(240, 240, 240, 0.5);" id="music_button" class="music_button">
+                <i class="fas fa-play" id="playpause"></i>
+            </button>
+            <audio id="player">
+                <source src='static/music/Wide Awake.mp3' type='audio/mpeg'/>
+            </audio>
+            
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <div class="text-center mx-auto text-secondary pt-5 pb-4" data-aos="fade-up" style="max-width: 100%; min-width: 50%;">
+            <p style="margin-left: 5%; margin-right: 5%;">Isaac y Yadira tienen el honor y placer de invitarlos a la fiesta de presentación de XV años de su hija</p>
+            <p style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #d63384;">Frida Sofía Ramírez Reyna</p>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <div class="parallax" data-parallax-image="static/img/fondo2.jpg"></div>
+        <div class="text-center mx-auto text-white py-5" data-aos="fade-up" style="max-width: 100%; min-width: 50%;">
+            <p style="font-family: 'Dancing Script', cursive; font-size: 5rem;">Mis Quince</p>
+            <p>Jueves 22 de Julio, 2021</p>
+            <p id="clock" style="font-family: 'Dancing Script', cursive; font-size: 3rem;"></p>
+        </div>
+    </div>
+
+    <!--Lugar y Fecha-->
+    <div id="LugarFecha" class="d-flex align-items-center">
+        <div class="text-center mx-auto text-secondary py-5" style="max-width: 100%; min-width: 50%;">
+            <p data-aos="fade-up" style="font-family: 'Dancing Script', cursive; font-size: 2rem; color: #d63384;">Lugar & Fecha</p>
+            <p data-aos="fade-up">Te dejamos los horarios de los eventos, así como un botón directo a
+                maps para que te sea más fácil llegar al lugar.</p>
+            <div class="container text-white" style="width: 100%;">
+                <div class="row">
+                    <div class="col-sm p-2" data-aos="fade-up">
+                        <div class="container p-2" style="height: 100%; border-style: solid; border-width: 1px; border-color: gray; border-radius: 10px;">
+                            <img src="static/img/iglesia.jpg" style="width: 100%; border-radius: 10px 10px 0 0;">
+                            <div class="container p-2" style="border-radius: 0 0 10px 10px;
+                            background: linear-gradient(45deg, rgba(251, 204, 209, 0.5) 10%, transparent 10%),
+                            linear-gradient(65deg, transparent 70%, rgba(251, 204, 209, 0.5) 70%),
+                            linear-gradient(15deg, rgba(251, 204, 209, 0.5) 80%, transparent 80%),
+                            linear-gradient(25deg, rgba(251, 204, 209, 0.5) 30%, transparent 30%),
+                            linear-gradient(-35deg, rgba(251, 204, 209, 0.5) 50%, transparent 50%),
+                            rgba(251, 204, 209, 0.5);">
+                                <p style="font-family: 'Dancing Script', cursive; font-size: 1.5rem; color: #d63384;">Iglesia</p>
+                                <div class="container py-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <i class="far fa-calendar-alt"></i><br>
+                                            Jueves 22 de Julio de 2021
+                                        </div>
+                                        <div class="col">
+                                            <div class="mx-auto" style="width: 4rem; height: 4rem; background-color:#d63384; border-radius: 50%; font-size: 2.4rem; color: #fbccd1;">
+                                                <i class="fas fa-church" data-aos="fade-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="far fa-clock"></i><br>
+                                            5:30 p.m.<br>6:30 p.m.
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Parroquia San Juan Bautista
+                                    <br>Calle Mutualismo 101, Sin Nombre, 67450 Cadereyta Jiménez, N.L.
+                                </p>
+                                <a href="https://fi.uy/ay7m" target="_blank" class="btn btn-outline-light">Ubicación <i class="fas fa-map-marker-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm p-2" data-aos="fade-up">
+                        <div class="container p-2" style="height: 100%; border-style: solid; border-width: 1px; border-color: gray; border-radius: 10px;">
+                            <img src="static/img/salon.jpg" style="width: 100%; border-radius: 10px 10px 0 0;">
+                            <div class="container p-2" style="border-radius: 0 0 10px 10px;
+                            background: linear-gradient(45deg, rgba(251, 204, 209, 0.5) 10%, transparent 10%),
+                            linear-gradient(65deg, transparent 70%, rgba(251, 204, 209, 0.5) 70%),
+                            linear-gradient(15deg, rgba(251, 204, 209, 0.5) 80%, transparent 80%),
+                            linear-gradient(25deg, rgba(251, 204, 209, 0.5) 30%, transparent 30%),
+                            linear-gradient(-35deg, rgba(251, 204, 209, 0.5) 50%, transparent 50%),
+                            rgba(251, 204, 209, 0.5);">
+                                <p style="font-family: 'Dancing Script', cursive; font-size: 1.5rem; color: #d63384;">Salón</p>
+                                <div class="container py-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <i class="far fa-calendar-alt" data-aos="flip-up"></i><br>
+                                            Jueves 22 de Julio de 2021
+                                        </div>
+                                        <div class="col">
+                                            <div class="mx-auto" style="width: 4rem; height: 4rem; background-color:#d63384; border-radius: 50%; font-size: 2.4rem; color: #fbccd1;">
+                                                <i class="fas fa-glass-cheers" data-aos="fade-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <i class="far fa-clock"></i><br>
+                                            8:00 p.m.<br>12:00 a.m.
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    Salón Serapio Venegas
+                                    <br>Benito Juárez 528, Las Norias, 67485 Cadereyta Jiménez, N.L.
+                                </p>
+                                <a href="https://fi.uy/5sni" target="_blank" class="btn btn-outline-light">Ubicación <i class="fas fa-map-marker-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Asistencia-->
+    <div id="Asistencia" class="d-flex align-items-center">
+        <div class="parallax" data-parallax-image="static/img/fondo3.jpg"></div>
+        <div class="text-center mx-auto text-white py-5" data-aos="fade-up" style="max-width: 100%; min-width: 50%;">
+            <p style="font-family: 'Dancing Script', cursive; font-size: 2rem;">Asistencia</p>
+            <p>¡Queremos compartir este momento tan esperado contigo!<br>Por favor ayúdanos confirmando tu asistencia.</p>
+            <form onsubmit="return false" id="form_asistencia" class="ps-4">
+                <div class="row" style="width: 100%">
+                    <div class="col-sm text-start">
+                        <label for="InputName" class="form-label">Nombre(s)</label>
+                        <input type="text" name="nombres" class="form-control" id="InputName">
+                    </div>
+                    <div class="col-sm text-start">
+                        <label for="InputApe" class="form-label">Apellido(s)</label>
+                        <input type="text" name="apellidos" class="form-control" id="InputApe">
+                    </div>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <div class="col-sm text-start my-1">
+                        <label for="InputTel" class="form-label">Teléfono</label>
+                        <input type="text" name="telefono" class="form-control" id="InputTel">
+                    </div>
+                    <div class="col-sm text-center my-1">
+                        <label class="form-label">Confirmación de asistencia</label>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <input name="radio" class="form-check-input" type="radio" name="flexRadioDefault" id="Asistire" value="Asistiré">
+                                    <label class="form-check-label" for="Asistire">
+                                        Asistiré
+                                    </label>
+                                </div>
+                                <div class="col-sm">
+                                    <input name="radio" class="form-check-input" type="radio" name="flexRadioDefault" id="NoAsistire" value="No asistiré">
+                                    <label class="form-check-label" for="NoAsistire">
+                                        No Asistiré
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row" style="width: 100%;">
+                    <div class="col-sm my-4">
+                        <button type="submit" id="btn_asistencia" class="btn btn-outline-light">Confirmar Asistencia</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Mesa de regalos-->
+    <div id="MesaRegalos" class="d-flex align-items-center">
+        <div class="text-center mx-auto text-secondary py-5" data-aos="fade-up" style="max-width: 100%; min-width: 50%;">
+            <p style="font-family: 'Dancing Script', cursive; font-size: 2rem; color: #d63384;">Mesa de Regalos</p>
+            <i data-aos="zoom-in" class="material-icons" style="font-size: 3rem;">redeem</i>
+            <p style="margin-left: 5%; margin-right: 5%;">¡Mi mejor regalo es tu compañía!
+            <br> Si quisieras hacerme un presente, tendré una caja para sobres el día del evento</p>
+        </div>
+    </div>
+
+    <!--Galeria-->
+    <div id="Galeria" class="d-flex align-items-center" style="
+    background: linear-gradient(45deg, rgba(251, 204, 209, 0.5) 10%, transparent 10%),
+    linear-gradient(65deg, transparent 70%, rgba(251, 204, 209, 0.5) 70%),
+    linear-gradient(15deg, rgba(251, 204, 209, 0.5) 80%, transparent 80%),
+    linear-gradient(25deg, rgba(251, 204, 209, 0.5) 30%, transparent 30%),
+    linear-gradient(-35deg, rgba(251, 204, 209, 0.5) 50%, transparent 50%),
+    rgba(251, 204, 209, 0.5);">
+        <div class="text-center mx-auto text-secondary pt-4 pb-5" style="max-width: 100vh;">
+            <p style="font-family: 'Dancing Script', cursive; font-size: 2rem; color: #d63384;">Galería</p>
+            <div class="container-sm" data-aos="zoom-in" data-aos-easing="linear">
+                <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" id="im1">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="static/img/gallery/g1.jpg" class="d-block w-100 imgGallery">
+                            <div class="carousel-caption">
+                                <button type="button" class="btnexpand" data-bs-toggle="modal" data-bs-target="#Modal1">
+                                    <i class="fas fa-expand expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="static/img/gallery/g2.jpg" class="d-block w-100 imgGallery">
+                            <div class="carousel-caption">
+                                <button type="button" class="btnexpand" data-bs-toggle="modal" data-bs-target="#Modal2">
+                                    <i class="fas fa-expand expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="static/img/gallery/g3-1.jpg" class="d-block w-100 imgGallery">
+                            <div class="carousel-caption">
+                                <button type="button" class="btnexpand" data-bs-toggle="modal" data-bs-target="#Modal3">
+                                    <i class="fas fa-expand expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="static/img/gallery/g4.jpg" class="d-block w-100 imgGallery">
+                            <div class="carousel-caption">
+                                <button type="button" class="btnexpand" data-bs-toggle="modal" data-bs-target="#Modal4">
+                                    <i class="fas fa-expand expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="static/img/gallery/g5.jpg" class="d-block w-100 imgGallery">
+                            <div class="carousel-caption">
+                                <button type="button" class="btnexpand" data-bs-toggle="modal" data-bs-target="#Modal5">
+                                    <i class="fas fa-expand expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="static/img/gallery/g6-1.jpg" class="d-block w-100 imgGallery">
+                            <div class="carousel-caption">
+                                <button type="button" class="btnexpand" data-bs-toggle="modal" data-bs-target="#Modal6">
+                                    <i class="fas fa-expand expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="static/img/gallery/g7-1.jpg" class="d-block w-100 imgGallery">
+                            <div class="carousel-caption">
+                                <button type="button" class="btnexpand" data-bs-toggle="modal" data-bs-target="#Modal7">
+                                    <i class="fas fa-expand expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Modal1" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent; border-style: none;">
+                <div class="modal-body">
+                    <button type="button" class="position-absolute top-0 end-0 m-3 btnexpand" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times expand"></i>
+                    </button>
+                    <img src="static/img/gallery/g1.jpg" class="d-block w-100 imgGallery">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal2" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent; border-style: none;">
+                <div class="modal-body">
+                    <button type="button" class="position-absolute top-0 end-0 m-3 btnexpand" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times expand"></i>
+                    </button>
+                    <img src="static/img/gallery/g2.jpg" class="d-block w-100 imgGallery">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal3" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent; border-style: none;">
+                <div class="modal-body">
+                    <button type="button" class="position-absolute top-0 end-0 m-3 btnexpand" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times expand"></i>
+                    </button>
+                    <img src="static/img/gallery/g3.jpg" class="d-block w-100 imgGallery">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal4" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent; border-style: none;">
+                <div class="modal-body">
+                    <button type="button" class="position-absolute top-0 end-0 m-3 btnexpand" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times expand"></i>
+                    </button>
+                    <img src="static/img/gallery/g4.jpg" class="d-block w-100 imgGallery">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal5" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent; border-style: none;">
+                <div class="modal-body">
+                    <button type="button" class="position-absolute top-0 end-0 m-3 btnexpand" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times expand"></i>
+                    </button>
+                    <img src="static/img/gallery/g5.jpg" class="d-block w-100 imgGallery">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal6" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent; border-style: none;">
+                <div class="modal-body">
+                    <button type="button" class="position-absolute top-0 end-0 m-3 btnexpand" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times expand"></i>
+                    </button>
+                    <img src="static/img/gallery/g6.jpg" class="d-block w-100 imgGallery">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal7" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent; border-style: none;">
+                <div class="modal-body">
+                    <button type="button" class="position-absolute top-0 end-0 m-3 btnexpand" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times expand"></i>
+                    </button>
+                    <img src="static/img/gallery/g7.jpg" class="d-block w-100 imgGallery">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Protocolos-->
+    <div id="Protocolos" class="d-flex align-items-center">
+        <div class="text-center mx-auto text-secondary py-5" data-aos="fade-up" data-aos-easing="linear" style="max-width: 100%; min-width: 50%;">
+            <p style="font-family: 'Dancing Script', cursive; font-size: 2rem; color: #d63384;">Protocolos</p>
+            <div class="row" style="width: 100%;">
+                <div class="col">
+                    <span data-aos="zoom-in" class="material-icons" style="font-size: 5rem;">social_distance</span>
+                    <p>Mantener la sana distancia</p>
+                </div>
+                <div class="col">
+                    <span data-aos="zoom-in" class="material-icons" style="font-size: 5rem;">masks</span>
+                    <p>Usar cubrebocas durante el evento</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="p-3 text-center mx-auto" style="font-size: 0.8rem;background-color:rgba(0,0,0,0.7); color: white; box-shadow: inset 0px 5px 70px black, inset 0px -5px 70px black;">
+        PI[3D] Proyectos e impresión 3D. Necesitas un proyecto en la web, contáctanos:<br>
+        <i class="fab fa-whatsapp"></i> 81-8017-9913 <br>
+    </div>
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>
